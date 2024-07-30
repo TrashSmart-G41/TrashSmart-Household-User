@@ -2,13 +2,44 @@ import MapView , { Marker } from 'react-native-maps';
 import { View , Text , Image } from 'react-native';
 import { Iconify } from 'react-native-iconify';
 
-const binMarkers = [
-  { id: '1', title: 'Viharamahadevi Park', description: 'A large public park in Colombo.', latitude: 6.9218381, longitude: 79.861243 },
-  { id: '2', title: 'Galle Face Green', description: 'A popular ocean-side urban park.', latitude: 6.9270786, longitude: 79.844909 },
-  { id: '3', title: 'Gangaramaya Temple', description: 'A famous Buddhist temple in Colombo.', latitude: 6.916169, longitude: 79.856556 },
-  { id: '4', title: 'Beira Lake', description: 'A large lake in the heart of the city.', latitude: 6.921699, longitude: 79.855893 },
-  { id: '5', title: 'Colombo National Museum', description: 'The largest museum in Sri Lanka.', latitude: 6.927079, longitude: 79.860964 },
+const houseMarkers = [
+  { id: '1', title: 'House 1', description: 'Residential house in Rajagiriya.', latitude: 6.916409, longitude: 79.900338 },
+  { id: '2', title: 'House 2', description: 'Residential house in Rajagiriya.', latitude: 6.917021, longitude: 79.900252 },
+  { id: '4', title: 'House 4', description: 'Residential house in Rajagiriya.', latitude: 6.916731, longitude: 79.900084 },
+  { id: '5', title: 'House 5', description: 'Residential house in Rajagiriya.', latitude: 6.917457, longitude: 79.900374 },
+  { id: '6', title: 'House 6', description: 'Residential house in Rajagiriya.', latitude: 6.916612, longitude: 79.899593 },
+  { id: '7', title: 'House 7', description: 'Residential house in Rajagiriya.', latitude: 6.915626, longitude: 79.898911 },
+  { id: '8', title: 'House 8', description: 'Residential house in Rajagiriya.', latitude: 6.917276, longitude: 79.900648 },
+  { id: '9', title: 'House 9', description: 'Residential house in Rajagiriya.', latitude: 6.916145, longitude: 79.899832 },
+  { id: '10', title: 'House 10', description: 'Residential house in Rajagiriya.', latitude: 6.916790, longitude: 79.900131 },
+  { id: '12', title: 'House 12', description: 'Residential house in Rajagiriya.', latitude: 6.916272, longitude: 79.900184 },
+  { id: '13', title: 'House 13', description: 'Residential house in Rajagiriya.', latitude: 6.917340, longitude: 79.900573 },
+  { id: '14', title: 'House 14', description: 'Residential house in Rajagiriya.', latitude: 6.916420, longitude: 79.900420 },
+  { id: '15', title: 'House 15', description: 'Residential house in Rajagiriya.', latitude: 6.915769, longitude: 79.899467 },
+  { id: '16', title: 'House 16', description: 'Residential house in Rajagiriya.', latitude: 6.917065, longitude: 79.900088 },
+  { id: '17', title: 'House 17', description: 'Residential house in Rajagiriya.', latitude: 6.916567, longitude: 79.899770 },
+  { id: '18', title: 'House 18', description: 'Residential house in Rajagiriya.', latitude: 6.917016, longitude: 79.900447 },
+  { id: '19', title: 'House 19', description: 'Residential house in Rajagiriya.', latitude: 6.916788, longitude: 79.899918 },
+  { id: '21', title: 'House 21', description: 'Residential house in Rajagiriya.', latitude: 6.917152, longitude: 79.900227 },
+  { id: '22', title: 'House 22', description: 'Residential house in Rajagiriya.', latitude: 6.916308, longitude: 79.899469 },
+  { id: '23', title: 'House 23', description: 'Residential house in Rajagiriya.', latitude: 6.915810, longitude: 79.899681 },
+  { id: '24', title: 'House 24', description: 'Residential house in Rajagiriya.', latitude: 6.917202, longitude: 79.900093 },
+  { id: '26', title: 'House 26', description: 'Residential house in Rajagiriya.', latitude: 6.916496, longitude: 79.900028 },
+  { id: '27', title: 'House 27', description: 'Residential house in Rajagiriya.', latitude: 6.917080, longitude: 79.900191 },
+  { id: '28', title: 'House 28', description: 'Residential house in Rajagiriya.', latitude: 6.915951, longitude: 79.898673 },
+  { id: '29', title: 'House 29', description: 'Residential house in Rajagiriya.', latitude: 6.916457, longitude: 79.899565 },
+  { id: '30', title: 'House 30', description: 'Residential house in Rajagiriya.', latitude: 6.917291, longitude: 79.900236 },
+  { id: '31', title: 'House 31', description: 'Residential house in Rajagiriya.', latitude: 6.916162, longitude: 79.899377 },
+  { id: '32', title: 'House 32', description: 'Residential house in Rajagiriya.', latitude: 6.917006, longitude: 79.900548 },
+  { id: '34', title: 'House 34', description: 'Residential house in Rajagiriya.', latitude: 6.917067, longitude: 79.900388 },
+  { id: '35', title: 'House 35', description: 'Residential house in Rajagiriya.', latitude: 6.916601, longitude: 79.899650 },
+  { id: '36', title: 'House 36', description: 'Residential house in Rajagiriya.', latitude: 6.916950, longitude: 79.900493 },
+  { id: '37', title: 'House 37', description: 'Residential house in Rajagiriya.', latitude: 6.917364, longitude: 79.900349 },
+  { id: '38', title: 'House 38', description: 'Residential house in Rajagiriya.', latitude: 6.915747, longitude: 79.898936 },
+  { id: '39', title: 'House 39', description: 'Residential house in Rajagiriya.', latitude: 6.916809, longitude: 79.900042 },
+  { id: '40', title: 'House 40', description: 'Residential house in Rajagiriya.', latitude: 6.917236, longitude: 79.900131 }
 ];
+
 
 const Truck = () => {
 
@@ -18,16 +49,29 @@ const Truck = () => {
         className='basis-3/4'
         provider={MapView.PROVIDER_DEFAULT} // Use default provider
         initialRegion={{
-          latitude: 6.902120284441931,
-          longitude: 79.86115289536023,
-          latitudeDelta: 0.0922,
-          longitudeDelta: 0.0421,
+          latitude: 6.916299,
+          longitude: 79.899684,
+          latitudeDelta: 0.0100,
+          longitudeDelta: 0.0058,
         }}
         zoomEnabled={true}
         scrollEnabled={true}
         zoomControlEnabled={true}
       >
-        {binMarkers.map((marker) => (
+
+        <Marker
+            key={'Current Location'}
+            coordinate={{ latitude: 6.916299, longitude: 79.899684 }}
+            title={'Current Location'}
+            onPress={() => console.log('Current Location pressed!')}
+          >
+            <Image
+                source={require('../../assets/icons/driver_icon.png')}
+                className='h-11 w-11'
+              />
+          </Marker>
+
+        {houseMarkers.map((marker) => (
           <Marker
             key={marker.id}
             coordinate={{ latitude: marker.latitude, longitude: marker.longitude }}

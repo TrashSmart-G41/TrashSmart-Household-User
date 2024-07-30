@@ -2,10 +2,9 @@ import { View, Text, Image, TouchableOpacity, Pressable } from 'react-native'
 import React from 'react'
 import {DrawerContentScrollView, DrawerItemList} from '@react-navigation/drawer'
 import { Ionicons } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native';
 
 const CustomDrawer = (props) => {
-    const navigation = useNavigation();
+    const { navigation } = props;
 
   return (
     <View className='flex-1 bg-white px-5'>

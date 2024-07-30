@@ -25,7 +25,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <SafeAreaView className='flex-1 bg-white'>
-        <Stack.Navigator screenOptions={ {headerShown: false} } initialRouteName="GetStarted">
+        <Stack.Navigator screenOptions={ {headerShown: false} } initialRouteName="HomeScreen">
         <Stack.Screen name="GetStarted" component={GetStarted} />
           <Stack.Screen name="LoginOrSignup" component={LoginOrSignup} />
           <Stack.Screen name="SignUpPhone" component={SignUpPhone} />
