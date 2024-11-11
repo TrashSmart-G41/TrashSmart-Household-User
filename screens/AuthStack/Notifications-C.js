@@ -115,7 +115,79 @@ const SignUpEmail = ({ navigation }) => {
                 onChangeText={OnChangePassword}
                 placeholder={'Enter Password'}
                 keyboardType={'default'}
-            />          
+            />
+
+
+
+            <View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View>
+
+            
 
             <Text className='text-sm text-gray-500 text-center leading-5 mt-10'>
                 By clicking continue, you agree to our <Text className='font-bold text-black'>Terms of Service and Privacy Policy</Text>
