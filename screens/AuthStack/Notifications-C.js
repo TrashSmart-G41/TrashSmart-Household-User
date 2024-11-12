@@ -119,6 +119,8 @@ const SignUpEmail = ({ navigation }) => {
 
 
 
+            
+
             <View className='flex-row items-center mt-8' >
                 <View className='flex-1 h-0.5 bg-gray-200 ' />
                 <Text className='text-sm text-gray-500 mx-4' >
@@ -180,6 +182,114 @@ const SignUpEmail = ({ navigation }) => {
                 </Text>
                 <View className='flex-1 h-0.5 bg-gray-200' />
             
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            
+                <View className='flex-1 h-0.5 bg-gray-200 ' />
+                <Text className='text-sm text-gray-500 mx-4' >
+                    or continue with
+                </Text>
+                <View className='flex-1 h-0.5 bg-gray-200' />
+            </View><View className='flex-row items-center mt-8' >
                 <View className='flex-1 h-0.5 bg-gray-200 ' />
                 <Text className='text-sm text-gray-500 mx-4' >
                     or continue with
