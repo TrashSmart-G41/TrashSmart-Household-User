@@ -2,7 +2,7 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/TabNavigatorScreens/Home';
 import Notifications from '../screens/TabNavigatorScreens/Notifications';
-import Header from './Header';
+import Header from '../components/Header';
 import Truck from '../screens/TabNavigatorScreens/Truck';
 import Bins from '../screens/TabNavigatorScreens/Bins';
 

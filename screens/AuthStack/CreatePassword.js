@@ -2,8 +2,21 @@ import { View, Text, Pressable, TextInput, KeyboardAvoidingView } from 'react-na
 import React, { useState } from 'react';
 import { Ionicons } from '@expo/vector-icons';
 import GoBack from '../../components/GoBack';
+import { BASE_URL } from '../../utils/config';
+import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
-const CreatePassword = ({ navigation }) => {
+const CreatePassword = ({ navigation, route }) => {
+    const {
+        firstName,
+        lastName,
+        email,
+        address,
+        city,
+        postalCode,
+        country,
+      } = route.params;
+
     const [password, onChangePassword] = useState('');
     const [confirmPassword, onChangeConfirmPassword] = useState('');
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -19,6 +32,35 @@ const CreatePassword = ({ navigation }) => {
 
     const allValid = Object.values(validationRules).every(Boolean) && password === confirmPassword;
 
+    const createUser = () => {
+        const role = 'HOUSEHOLD';
+        
+        axios.post(
+        `${BASE_URL}/api/v1/household_user/register`, 
+        {
+            firstName,
+            lastName,
+            email,
+            address,
+            //city: 'Metropolis',
+            //postalCode: '12345',
+            //country: 'Wonderland',
+            password,
+            role
+        }
+        ).
+        then(res => {
+            let response = res.data;
+            console.log('User created successfully:', response)
+
+            AsyncStorage.setItem('userToken', response.jwt);
+            navigation.navigate('profilePhoto', {email, password});
+        })
+        .catch(e => {
+            console.log(`Error creating user: ${e}`);
+        });
+    };
+
     return (
         <View className='flex-1 bg-white'>
             <GoBack navigation={navigation} />
@@ -27,7 +69,7 @@ const CreatePassword = ({ navigation }) => {
                 <Ionicons name="lock-closed-outline" size={36} color="lightgray" />
                 <Text className='text-2xl font-bold mt-3'>Create password</Text>
                 <Text className='text-base text-gray-600 mt-1'>Your new password must meet the criteria below for enhanced security.</Text>
-
+                
                 <KeyboardAvoidingView>
                     <View className={`flex-row items-center border-2 ${password && !allValid ? 'border-red-500' : 'border-gray-200'} rounded-xl pl-5 pr-10 py-2.5 mt-5`}>
                         <TextInput
@@ -78,7 +120,7 @@ const CreatePassword = ({ navigation }) => {
                 </KeyboardAvoidingView>
 
                 <Pressable
-                    onPress={() => navigation.navigate('SuccessEmail')}
+                    onPress={() => navigation.navigate('ProfilePhoto', {email, password}) }
                     className={`w-full rounded-xl py-3.5 mt-8 ${allValid ? 'bg-green-500' : 'bg-gray-300'}`}
                     disabled={!allValid}
                 >
